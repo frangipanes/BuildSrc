@@ -25,14 +25,18 @@ class AndroidSourcesPluginFuncTest {
 //            '5.6.4',
 //            '6.0.1',
 //            '6.1.1',
-            '6.2.2',
-            '6.3',
-            '6.4',
+//            '6.2.2',
+//            '6.3',
+//            '6.4.1',
+//            '6.5.1',
+            '6.6.1',
+            '6.7',
     ]
     static def androidVersions = [
-            '3.6.+': gradleVersions,
+//            '3.6.+': gradleVersions,
             '4.0.+': gradleVersions,
-            '4.1.+': gradleVersions[2..-1],
+            '4.1.+': gradleVersions,
+            '4.2.+': gradleVersions,
     ]
 
     @TempDir
@@ -95,8 +99,8 @@ class AndroidSourcesPluginFuncTest {
             apply plugin: 'com.android.library'
 
             android {
-                compileSdkVersion 29
-                buildToolsVersion '29.0.2'
+                compileSdkVersion 30
+                buildToolsVersion '30.0.2'
             }
         """
 
@@ -124,8 +128,8 @@ class AndroidSourcesPluginFuncTest {
             apply plugin: 'maven-publish'
 
             android {
-                compileSdkVersion 29
-                buildToolsVersion '29.0.2'
+                compileSdkVersion 30
+                buildToolsVersion '30.0.2'
             }
 
             afterEvaluate {
