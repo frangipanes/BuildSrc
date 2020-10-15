@@ -194,4 +194,4 @@ License
   [sources]: https://plugins.gradle.org/plugin/xyz.tynn.android.sources
   [sources-badge]: https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/xyz/tynn/android/sources/xyz.tynn.android.sources.gradle.plugin/maven-metadata.xml?label=Plugin&logo=gradle
   [travis]: https://travis-ci.com/tynn-xyz/BuildSrc
-  [travis-badge]: https://img.shields.io/travis/com/tynn-xyz/BuildSrc.svg?label=Build&logo=travis-ci&logoColor=white
+  [travis-badge]: https://img.shields.io/travis/com/tynn-xyz/BuildSrc.svg?label=Build&logo=travis-ci&logoColor=F5F5F5

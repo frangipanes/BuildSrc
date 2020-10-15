@@ -23,9 +23,12 @@ class KdocElementsPluginFuncTest {
     static def gradleVersions = [
 //            '6.0.1',
 //            '6.1.1',
-            '6.2.2',
-            '6.3',
-            '6.4',
+//            '6.2.2',
+//            '6.3',
+//            '6.4.1',
+//            '6.5.1',
+            '6.6.1',
+            '6.7',
     ]
 
     @TempDir

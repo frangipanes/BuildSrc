@@ -10,6 +10,7 @@ import org.gradle.api.provider.Provider;
 import org.gradle.api.tasks.TaskProvider;
 
 import javax.annotation.Nullable;
+import java.util.function.BiFunction;
 
 @SuppressWarnings("NullableProblems")
 final class NoDokkaTaskProvider<T extends Task> implements TaskProvider<T> {
@@ -61,6 +62,16 @@ final class NoDokkaTaskProvider<T extends Task> implements TaskProvider<T> {
 
     @Override
     public Provider<T> orElse(Provider<? extends T> provider) {
+        return null;
+    }
+
+    @Override
+    public Provider<T> forUseAtConfigurationTime() {
+        return null;
+    }
+
+    @Override
+    public <B, R> Provider<R> zip(Provider<B> provider, BiFunction<T, B, R> biFunction) {
         return null;
     }
 }

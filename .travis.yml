@@ -5,8 +5,6 @@ jdk:
 android:
   components:
     - tools
-    - android-29
-    - build-tools-29.0.2
 
 
 branches:
@@ -21,6 +19,9 @@ git:
 before_install:
   - gradle -b wrapper.gradle
 
+
+before_script:
+  - yes | sdkmanager --update
 
 script:
   - ./gradlew check
